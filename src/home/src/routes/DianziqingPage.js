@@ -67,11 +67,11 @@ const IconText = ({ type, text }) => (
 DianziqingPage.propTypes = {
 };
 
-const stateProps=({dianziqing:{list}})=>{
+const mapStateToProps=({dianziqing:{list}})=>{
   console.log('stateProps:'+list.length);
   return{
     list,
   } 
 }
 
-export default connect(stateProps)(DianziqingPage);
+export default connect(mapStateToProps)(DianziqingPage);

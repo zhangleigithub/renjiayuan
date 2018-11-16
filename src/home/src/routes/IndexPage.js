@@ -95,6 +95,4 @@ class MenuPage extends React.Component {
 MenuPage.propTypes = {
 };
 
-export default connect(({x})=>({
-    content:x,
-}))(MenuPage);
+export default connect()(MenuPage);
